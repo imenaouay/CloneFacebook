@@ -1,0 +1,808 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+body {
+    background: #efefef;
+    color: #252525;
+}
+
+/*..........navbar css coding..........*/
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.nav-left .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nav-left .search-box {
+    width: 230px;
+    height: 40px;
+    background: #efefef;
+    border-radius: 20px;
+    margin-left: 16px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left .search-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding-left: 8px;
+}
+
+.nav-center {
+    margin-right: 30px;
+}
+
+.nav-center i {
+    width: 110px;
+    background: none;
+    border-radius: 100px;
+    margin-left: 12px;
+    font-size: 22px;
+    padding: 13px 40px;
+    color: #4636;
+}
+
+.nav-center .fa-house {
+    color: #3636f8;
+    position: relative;
+}
+
+.nav-center .fa-house::after {
+    content: '';
+    background: #3636f8;
+    width: 100%;
+    height: 3px;
+    bottom: -8px;
+    left: 6px;
+    position: absolute;
+}
+
+.nav-center a i:hover {
+    background: #efefef;
+    color: #252525;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.nav-right i {
+    background: #efefef;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 8px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-right i:hover {
+    background: #b9b7b7;
+}
+
+/*---------- part 2 : drop down menu -----*/
+
+.card-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.open-menu{
+    max-height: 400px;
+}
+.card-menu {
+    width: 330px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 14px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.profile-menu {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 12px 0;
+    margin-bottom: 15px;
+    
+}
+
+.profile-menu p {
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    margin-left: 20px;
+}
+
+.card-menu-items {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 8px;
+    padding: 5px 0;
+    color: #252525;
+    -webkit-filter: grayscale(100%); /*--------change color image to black---*/
+    filter: grayscale(100%);
+}
+
+.card-menu-items:hover {
+    background: #efefef;
+}
+
+.card-menu-items p {
+    width: 100%;
+    font-size: 15px;
+   /* font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+}
+
+.card-menu-items span {
+    font-size: 22px;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+}
+
+.card-menu-items img {
+    width: 40px;
+    background: #e5e5e5;
+    padding: 8px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+/*--............ part 3 : left Main section .........................--*/
+
+.main{
+    display: flex;
+    margin-top: 60px;
+}
+
+.main-left{
+    background: #efefef;
+    width: 24%;
+    height: 92vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: fixed;
+    
+}
+
+.main-left::-webkit-scrollbar{
+    width: 7px;
+}
+
+
+.main-left::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: #f2f2f2;
+}
+
+.main-left:hover::-webkit-scrollbar-thumb{
+    background: #959494;
+}
+
+
+.img{
+    display: flex;
+    height: 40px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+.img:hover{
+    background: #e8e7e7;
+    border-radius: 7px;
+}
+.img p{
+    padding: 14px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #252525;
+    margin-left: 10px;
+}
+.img img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px 12px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-left hr{
+    border: 0;
+    background: #ccc;
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+}
+
+.shortcuts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px 12px;
+}
+
+.shortcuts a{
+    text-decoration: none;
+}
+
+.shortcuts p{
+    font-size: 16px;
+}
+
+/*---------- right sidebar css    -----------------*/
+
+/* General Styles */
+.main-right {
+    width: 300px;
+    padding: 10px;
+    background-color: #efefef;
+    border-left: 1px solid #dddfe2;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.main-right::-webkit-scrollbar{
+    width: 7px;
+}
+
+
+.main-right::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: #f2f2f2;
+}
+
+.main-right:hover::-webkit-scrollbar-thumb{
+    background: #959494;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #1c1e21;
+    font-weight: 600;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dddfe2;
+    margin: 10px 0;
+}
+
+/* Sponsored Section */
+.sponsored-section {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.sponsored-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sponsored-link img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+    
+}
+
+.sponsored-link p {
+    margin: 0;
+    font-size: 12px;
+    color: #1c1e21;
+}
+
+.sponsored-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Pages and Profile Section */
+.page-section {
+    margin-bottom: 20px;
+}
+
+.page-links, .page-links-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.page-links img, .page-links-item img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.page-links p, .page-links-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #1c1e21;
+}
+
+/* Friend Request Section */
+.friend-section {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.buttons .confirm, .buttons .delete {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.buttons .confirm {
+    background-color: #1877f2;
+    color: white;
+}
+
+.buttons .delete {
+    background-color: #e4e6eb;
+    color: #050505;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-bottom: 20px;
+}
+
+.contact-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-search img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.contact-search img:hover{
+    background: #e8e7e7;/* make effect with movement cursor */
+}
+
+.contact-search h4{
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.page-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.page-links:hover, .page-links-item:hover, .sponsored-link:hover{
+    background: #e8e7e7;
+    border-radius: 7px;
+}
+
+.page-links .online {
+    position: relative;
+}
+
+.page-links img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.online::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #31a24c;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.page-links p {
+    margin: 0;
+    font-size: 14px;
+    color: #1c1e21;
+}
+
+
+/********************* main center section from here starts ****************/
+.main-center {
+    width: 45%;
+    margin: 0 auto;
+    height: auto;
+    background: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.top-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: #fff;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.my-story, .friends-story{
+    width: 125px;
+    height: 240px;
+    margin: 0 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.my-story img, .friends-story img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.upload{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    bottom: 50px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.upload img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    bottom: 15px;
+}
+.upload p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+    font-weight: 600;
+    font-size: 13px;
+}
+.friends-profile{
+    position: relative;
+    bottom: 240px;
+    margin-left: 10px;
+}
+.friends-profile .circle{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #27cc37;
+    border: 1px solid #fff;
+    position: relative;
+    bottom: 15px;
+    left: 25px;
+}
+
+.friends-profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #45abff;
+}
+
+.friend-name{
+    position: relative;
+    bottom: -169px;
+    padding: 0 3px;
+}
+.friend-name p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/****** css center post section ******/
+
+.create-post {
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.create-post .ptop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.create-post .ptop img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.create-post .ptop input {
+    width: calc(100% - 60px); /* Adjusted width to fit properly */
+    padding: 10px;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 30px;
+    font-size: 17px;
+}
+
+.create-post .ptop input:hover {
+    background: #e3e3e3;
+    cursor: pointer;
+}
+
+.create-post .pbottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.create-post .pbottom .post-icon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 8px;
+}
+
+.create-post .pbottom .post-icon:hover {
+    background: #efefef;
+}
+
+.create-post .pbottom .post-icon i {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.create-post .pbottom .post-icon i.red {
+    color: red;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.create-post .pbottom .post-icon i.green {
+    color: green;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.create-post .pbottom .post-icon i.yellow {
+    color: yellow;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+/****** part post friends center section ****/
+.friends-post{
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+.friends-ptop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.friends-ptop .img-name{
+    display: flex;
+    align-items: center;
+}
+.friends-ptop .img-name img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.friends-name:hover{
+    text-decoration: underline;
+
+}
+.friends-name .time{
+    font-size: 13px;
+    color: #919191;
+    margin: 3px 0;
+}
+.friend-name .time i{
+    font-size: 10px;
+}
+.friends-ptop .menu{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.friends-ptop .menu:hover{
+    background: #efefef;
+    cursor: pointer;
+}
+.friends-post img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+.friends-post .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.friends-post .post-icons{
+    display: flex;
+}
+.friends-post .post-icons img{
+    width: 20px;
+    height: 20px;
+}
+.info .comment{
+    display: flex;
+    align-items: center;
+}
+.info .comment p{
+    padding: 0 12px;
+    font-size: 15px;
+    color: #919191;
+}
+hr{
+    height: 1px;
+}
+.friends-post .like{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.friends-post .like .like-icon{
+    display: flex;
+    align-items: center;
+}
+.friends-post .like-icon{
+    font-size: 18px;
+    margin-right: 8px;
+    color: #919191;
+  
+}
+.comment-wrapper{
+    display: flex;
+    align-items: center;
+}
+.comment-wrapper img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 15px;
+}
+.comment-wrapper .circle{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #27cc37;
+    border: 1px solid #fff;
+    position: relative;
+    top: 15px;
+    right: 25px;
+}
+.comment-wrapper .comment-search{
+    width: 90%;
+    padding: 5px 15px;
+    background: #efefef;
+    border-radius: 30px;
+}
+
+.comment-search input{
+    width: 80%;
+    height: 30px;
+    background: #f2f2f2;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+}
+
+.comment-search i{
+    padding: 0 5px;
+    color: #919191;
+}
+

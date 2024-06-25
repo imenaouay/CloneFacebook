@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CloneFacebook</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!----------------link css-------->
+        <link href="style.css" rel="stylesheet">
+
+        <!----- font awesome cdn link-------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <dic class="container">
+            <nav>
+                 <div class="nav-left">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="" srcset="">
+
+                     </div>
+                     <div class="search-box">
+                       <i class="fa-solid fa-magnifying-glass"></i>
+                       <input type="text" placeholder="Search">
+                       </div>
+                         </div>
+                     <div class="nav-center">
+                        <i class="fa-solid fa-house"></i>
+                        <a href=""><i class="fa-solid fa-tv"></i></a>
+                        <a href=""><i class="fa-solid fa-store"></i></a>
+                        <a href=""><i class="fa-solid fa-users"></i></a>
+                        <a href=""><i class="fa-solid fa-gamepad"></i></a>
+                     </div>
+
+                 </div>
+                 <div class="nav-right">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <i class="fa-solid fa-bell"></i>
+
+                    <!---Part-2:drop down menu code from here starts..-->
+
+                    <img src="images/profile.jpg" alt="" class="profile" onclick="OpenCard()">
+
+                    <div class="card-menu-wrap" id="cardWrap">
+                        <div class="card-menu">
+                            <div class="profile-menu">
+                                <img src="images/profile.jpg" alt="" srcset="" >
+                                 <p>Dev_Art</p>
+                            </div>
+
+                            <a href="#" class="card-menu-items">
+                                <img src="images/meta-icon.png" alt="" srcset="">
+                                <p>Meta Business Suite</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="card-menu-items">
+                                <img src="images/settings.png" alt="" srcset="">
+                                <p>Setting & Privacy</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="card-menu-items">
+                                <img src="images/help.jpg" alt="" srcset="">
+                                <p>Help & Support</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="card-menu-items">
+                                <img src="images/display.png" alt="" srcset="">
+                                <p>Display and Accessibility</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="card-menu-items">
+                                <img src="images/feedback.jpg" alt="" srcset="">
+
+                                <p>Give Feedback</p>
+                            </a>
+                            <a href="#" class="card-menu-items">
+                                <img src="images/logout.png" alt="" srcset="">
+                                <p>Logout</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                 </div>
+            </nav>
+
+         <!--............ part 3 : Main section .........................-->
+         <div class="main">
+
+            <!-- .......................left section from here starts ..........----------->
+
+            <div class="main-left">
+                <div class="img">
+                    <img src="images/profile.jpg" alt="" srcset="">
+                    <p> DevArt</p>
+                </div>
+                <div class="img">
+                    <img src="images/friends.png" alt="" srcset="">
+                    <p> Freinds</p>
+                </div>
+                <div class="img">
+                    <img src="images/news.png" alt="" srcset="">
+                    <p> News</p>
+                </div>
+                <div class="img">
+                    <img src="images/group.png" alt="" srcset="">
+                    <p> Groups</p>
+                </div>
+                <div class="img">
+                    <img src="images/marketplace.png" alt="" srcset="">
+                    <p> Marketplace</p>
+                </div>
+                <div class="img">
+                    <img src="images/watch.png" alt="" srcset="">
+                    <p> Watch</p>
+                </div>
+                <div class="img">
+                    <img src="images/see more.png" alt="" srcset="">
+                    <p> See More</p>
+                </div>
+             <hr>
+
+             <div class="shortcuts">
+                <p> Your Shortcuts</p>
+                <a href="#">Edit</a>
+             </div>
+
+<div class="img">
+    <img src="images/candy crush.png" alt="" srcset="">
+    <p> Candy Crush Saga</p>
+</div>
+<div class="img">
+    <img src="images/bubble shooter.jpeg" alt="" srcset="">
+    <p> Bubble Shooter</p>
+</div>
+<div class="img">
+    <img src="images/Car Town Game.jpg" alt="" srcset="">
+    <p> Car Town Game</p>
+</div>
+<div class="img">
+    <img src="images/art.jpg" alt="" srcset="">
+    <p> Design Art</p>
+</div>
+
+<div class="img">
+    <img src="images/art2.jpg" alt="" srcset="">
+    <p> Design</p>
+</div>
+<div class="img">
+    <img src="images/art3.jpg" alt="" srcset="">
+    <p> Art</p>
+</div>
+
+            </div>
+
+
+
+            <!-- .......................center section from here starts ..........----------->
+
+         <div class="main-center">
+            <div class="top-box">
+                <div class="my-story">
+                <img src="images/profile.jpg">
+                    <div class="upload">
+                        <img src="images/upload.png">
+                        <p>Post Your Story</p>
+                    </div>
+                </div>
+                <div class="friends-story">
+                    <img src="images/status-5.jpg">
+                    <div class="friends-profile">
+                        <img src="images/friend1.jpg">
+                        <div class="circle"></div>
+                        <div class="friend-name">
+                            <p>Fatima Manai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="friends-story">
+                    <img src="images/status-2.jpg">
+                    <div class="friends-profile">
+                        <img src="images/friend2.jpg">
+                        <div class="circle"></div>
+                        <div class="friend-name">
+                            <p>Bilel Away</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="friends-story">
+                    <img src="images/status-4.jpg">
+                    <div class="friends-profile">
+                        <img src="images/friend10.jpg">
+                        <div class="circle"></div>
+                        <div class="friend-name">
+                            <p>Nabila Manai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="create-post">
+                <div class="ptop">
+                    <img src="images/profile.jpg" alt="" srcset="">
+                    <input type="text" placeholder="What's in your mind?">
+                </div>
+                <hr>
+                <div class="pbottom">
+                    <div class="post-icon">
+                        <i class="fa-solid fa-video red"></i>
+                        <p>Live Video</p>
+                    </div>
+                    <div class="post-icon">
+                        <i class="fa-solid fa-images green"></i>
+                        <p>Photo/Vidéo</p>
+                    </div>
+                    <div class="post-icon">
+                        <i class="fa-solid fa-face-grin yellow"></i>
+                        <p>Feelings/Activity</p>
+                    </div>
+                </div>
+            </div>
+            <div class="friends-post">
+                <div class="friends-ptop">
+                    <div class="img-name">
+                        <img src="images/friend6.jpg" alt="" srcset="">
+                        <div class="friends">
+                            <p class="friends-name">Bader Din Away</p>
+                            <p class="time">2h.<i class="fa-solid fa-users"></i></p>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <img src="images/post-5.jpg" alt="" srcset="">
+                <div class="info">
+                    <div class="post-icons">
+                        <img src="images/like.png" alt="" srcset="">
+                        <img src="images/hhhh.png" alt="" srcset="">
+                        <img src="images/heart.png" alt="" srcset="">
+                        <p>You, Fatima and 1.6k others</p>
+                    </div>
+                    <div class="comment">
+                        <p>300 comments</p>
+                        <p>90 shares</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="like">
+                    <div class="like-icon">
+                        <i class="fa-solid fa-thumbs-up active"></i>
+                        <p>Like</p>
+                    </div>
+                    <div class="like-icon">
+                        <i class="fa-solid fa-message"></i>
+                        <p>Comments</p>
+                    </div>
+                    <div class="like-icon">
+                        <i class="fa-solid fa-share"></i>
+                        <p>Shares</p>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <div class="comment-wrapper">
+                    <img src="images/friend8.jpg" alt="" srcset="">
+                    <div class="circle"></div>
+                    <div class="comment-search">
+                        <input type="text" placeholder="Write a comment">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <i class="fa-soli fa-camera"></i>
+                        <i class="fa-regular fa-note-sticky"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+        
+
+
+
+         </div>
+    
+
+
+
+            <!-- .......................right section from here starts ..........----------->
+
+            <div class="main-right">
+                <div class="sponsored-section">
+                    <h4>Sponsored</h4>
+                    <div class="sponsored-link">
+                        <img src="images/advertisement.jpg" alt="Advertisement">
+                        <p>Online Advertisement Services <br><a href="#">onlineservices.com</a></p>
+                    </div>
+                    <div class="sponsored-link">
+                        <img src="images/advertisement.jpg" alt="Advertisement">
+                        <p>Online Advertisement Services <br><a href="#">onlineservices.com</a></p>
+                    </div>
+                </div>
+            
+                <hr>
+            
+                <div class="page-section">
+                    <h4>Your Pages and Profile</h4>
+                    <div class="page-links">
+                        <img src="images/profile0.jpg" alt="Profile">
+                        <p>Web Code</p>
+                    </div>
+                    <div class="page-links-item">
+                        <img src="images/sw.png" alt="Switch to page">
+                        <p>Switch to Page</p>
+                    </div>
+                    <div class="page-links-item">
+                        <img src="images/promotion.png" alt="Create promotion">
+                        <p>Create Promotion</p>
+                    </div>
+                </div>
+            
+                <hr>
+            
+                <div class="friend-section">
+                    <h4>Friend Request</h4>
+                    <div class="page-links">
+                        <img src="images/photo1.jpg" alt="Friend request">
+                        <p>Alaa Ben Hamouda</p>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit" class="confirm">Confirm</button>
+                        <button type="submit" class="delete">Delete</button>
+                    </div>
+                </div>
+            
+                <hr>
+            
+                <div class="contact-section">
+                    <div class="contact-search">
+                        <h4>Contacts</h4>
+                        <img src="images/search.png" alt="Search">
+                        <img src="images/more.png" alt="More options">
+                    </div>
+                    <div class="page-links">
+                        <div class="online">
+                            <img src="images/friend1.jpg" alt="Friend">
+                        </div>
+                        <p>Ataa Ben Hamouda</p>
+                    </div>
+                    <div class="page-links">
+                        <div class="online">
+                            <img src="images/friend2.jpg" alt="Friend">
+                        </div>
+                        <p>Nabila Manai</p>
+                    </div>
+                    <div class="page-links">
+                        <div class="online">
+                            <img src="images/friend3.jpg" alt="Friend">
+                        </div>
+                        <p>Abd Aziz away</p>
+                    </div>
+                    <div class="page-links">
+                        <div class="online">
+                            <img src="images/friend4.jpg" alt="Friend">
+                        </div>
+                        <p>Bilel away</p>
+                    </div>
+                    <div class="page-links">
+                        <div class="online">
+                            <img src="images/friend5.jpg" alt="Friend">
+                        </div>
+                        <p>Bader Din away</p>
+                    </div>
+                    <div class="page-links">
+                        <div class="online">
+                            <img src="images/friend6.jpg" alt="Friend">
+                        </div>
+                        <p>Imen away</p>
+                    </div>
+                    <div class="page-links">
+                        <div class="online">
+                            <img src="images/friend7.jpg" alt="Friend">
+                        </div>
+                        <p>Karima Manai</p>
+                    </div>
+                    <div class="page-links">
+                        <div class="online">
+                            <img src="images/friend8.jpg" alt="Friend">
+                        </div>
+                        <p>Fatima Manai</p>
+                    </div>
+                    <div class="page-links">
+                        <div class="online">
+                            <img src="images/friend9.jpg" alt="Friend">
+                        </div>
+                        <p>Najiya away</p>
+                    </div>
+                    <div class="page-links">
+                        <div class="online">
+                            <img src="images/friend10.jpg" alt="Friend">
+                        </div>
+                        <p>Ali Manai</p>
+                    </div>
+                </div>
+            </div>
+            
+
+         </div>
+
+
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+</html>
