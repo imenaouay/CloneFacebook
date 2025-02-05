@@ -68,7 +68,7 @@ nav {
 }
 
 .nav-center {
-    margin-right: 30px;
+    left: 5px;
 }
 
 .nav-center i {
@@ -161,8 +161,7 @@ nav {
     box-shadow: 1px 0 3px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     padding: 12px 0;
-    margin-bottom: 15px;
-    
+    margin-bottom: 15px;   
 }
 
 .profile-menu p {

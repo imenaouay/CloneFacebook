@@ -5,415 +5,333 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!----------------link css-------->
+        <!-- link css -->
         <link href="style.css" rel="stylesheet">
 
-        <!----- font awesome cdn link-------->
+        <!-- font awesome cdn link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
 
-        <dic class="container">
+        <div class="container">
             <nav>
-                 <div class="nav-left">
+                <div class="nav-left">
                     <div class="logo">
-                        <img src="images/logo.png" alt="" srcset="">
-
-                     </div>
-                     <div class="search-box">
-                       <i class="fa-solid fa-magnifying-glass"></i>
-                       <input type="text" placeholder="Search">
-                       </div>
-                         </div>
-                     <div class="nav-center">
-                        <i class="fa-solid fa-house"></i>
-                        <a href=""><i class="fa-solid fa-tv"></i></a>
-                        <a href=""><i class="fa-solid fa-store"></i></a>
-                        <a href=""><i class="fa-solid fa-users"></i></a>
-                        <a href=""><i class="fa-solid fa-gamepad"></i></a>
-                     </div>
-
-                 </div>
-                 <div class="nav-right">
+                        <img src="https://i.postimg.cc/JnNnTpPg/logo.png" alt="">
+                    </div>
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+                <div class="nav-center">
+                    <i class="fa-solid fa-house"></i>
+                    <a href=""><i class="fa-solid fa-tv"></i></a>
+                    <a href=""><i class="fa-solid fa-store"></i></a>
+                    <a href=""><i class="fa-solid fa-users"></i></a>
+                    <a href=""><i class="fa-solid fa-gamepad"></i></a>
+                </div>
+                <div class="nav-right">
                     <i class="fa-solid fa-bars"></i>
                     <i class="fa-brands fa-facebook-messenger"></i>
                     <i class="fa-solid fa-bell"></i>
-
-                    <!---Part-2:drop down menu code from here starts..-->
-
-                    <img src="images/profile.jpg" alt="" class="profile" onclick="OpenCard()">
-
-                    <div class="card-menu-wrap" id="cardWrap">
-                        <div class="card-menu">
-                            <div class="profile-menu">
-                                <img src="images/profile.jpg" alt="" srcset="" >
-                                 <p>Dev_Art</p>
-                            </div>
-
-                            <a href="#" class="card-menu-items">
-                                <img src="images/meta-icon.png" alt="" srcset="">
-                                <p>Meta Business Suite</p>
-                                <span>></span>
-                            </a>
-                            <a href="#" class="card-menu-items">
-                                <img src="images/settings.png" alt="" srcset="">
-                                <p>Setting & Privacy</p>
-                                <span>></span>
-                            </a>
-                            <a href="#" class="card-menu-items">
-                                <img src="images/help.jpg" alt="" srcset="">
-                                <p>Help & Support</p>
-                                <span>></span>
-                            </a>
-                            <a href="#" class="card-menu-items">
-                                <img src="images/display.png" alt="" srcset="">
-                                <p>Display and Accessibility</p>
-                                <span>></span>
-                            </a>
-                            <a href="#" class="card-menu-items">
-                                <img src="images/feedback.jpg" alt="" srcset="">
-
-                                <p>Give Feedback</p>
-                            </a>
-                            <a href="#" class="card-menu-items">
-                                <img src="images/logout.png" alt="" srcset="">
-                                <p>Logout</p>
-                            </a>
-                        </div>
-                    </div>
-
-
-
-
-                 </div>
+                    <img src="https://i.postimg.cc/1RWP9xnB/profile.jpg" alt="" class="profile" onclick="toggleCardMenu()">
+                </div>
             </nav>
 
-         <!--............ part 3 : Main section .........................-->
-         <div class="main">
-
-            <!-- .......................left section from here starts ..........----------->
-
-            <div class="main-left">
-                <div class="img">
-                    <img src="images/profile.jpg" alt="" srcset="">
-                    <p> DevArt</p>
-                </div>
-                <div class="img">
-                    <img src="images/friends.png" alt="" srcset="">
-                    <p> Freinds</p>
-                </div>
-                <div class="img">
-                    <img src="images/news.png" alt="" srcset="">
-                    <p> News</p>
-                </div>
-                <div class="img">
-                    <img src="images/group.png" alt="" srcset="">
-                    <p> Groups</p>
-                </div>
-                <div class="img">
-                    <img src="images/marketplace.png" alt="" srcset="">
-                    <p> Marketplace</p>
-                </div>
-                <div class="img">
-                    <img src="images/watch.png" alt="" srcset="">
-                    <p> Watch</p>
-                </div>
-                <div class="img">
-                    <img src="images/see more.png" alt="" srcset="">
-                    <p> See More</p>
-                </div>
-             <hr>
-
-             <div class="shortcuts">
-                <p> Your Shortcuts</p>
-                <a href="#">Edit</a>
-             </div>
-
-<div class="img">
-    <img src="images/candy crush.png" alt="" srcset="">
-    <p> Candy Crush Saga</p>
-</div>
-<div class="img">
-    <img src="images/bubble shooter.jpeg" alt="" srcset="">
-    <p> Bubble Shooter</p>
-</div>
-<div class="img">
-    <img src="images/Car Town Game.jpg" alt="" srcset="">
-    <p> Car Town Game</p>
-</div>
-<div class="img">
-    <img src="images/art.jpg" alt="" srcset="">
-    <p> Design Art</p>
-</div>
-
-<div class="img">
-    <img src="images/art2.jpg" alt="" srcset="">
-    <p> Design</p>
-</div>
-<div class="img">
-    <img src="images/art3.jpg" alt="" srcset="">
-    <p> Art</p>
-</div>
-
-            </div>
-
-
-
-            <!-- .......................center section from here starts ..........----------->
-
-         <div class="main-center">
-            <div class="top-box">
-                <div class="my-story">
-                <img src="images/profile.jpg">
-                    <div class="upload">
-                        <img src="images/upload.png">
-                        <p>Post Your Story</p>
+            <!-- Part 2: drop down menu -->
+            <div class="card-menu-wrap" id="cardWrap">
+                <div class="card-menu">
+                    <div class="profile-menu">
+                        <img src="https://i.postimg.cc/1RWP9xnB/profile.jpg" alt="" class="profile" onclick="toggleCardMenu()">
+                        <p>Dev_Art</p>
                     </div>
-                </div>
-                <div class="friends-story">
-                    <img src="images/status-5.jpg">
-                    <div class="friends-profile">
-                        <img src="images/friend1.jpg">
-                        <div class="circle"></div>
-                        <div class="friend-name">
-                            <p>Fatima Manai</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="friends-story">
-                    <img src="images/status-2.jpg">
-                    <div class="friends-profile">
-                        <img src="images/friend2.jpg">
-                        <div class="circle"></div>
-                        <div class="friend-name">
-                            <p>Bilel Away</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="friends-story">
-                    <img src="images/status-4.jpg">
-                    <div class="friends-profile">
-                        <img src="images/friend10.jpg">
-                        <div class="circle"></div>
-                        <div class="friend-name">
-                            <p>Nabila Manai</p>
-                        </div>
-                    </div>
+                    <a href="#" class="card-menu-items">
+                        <img src="https://i.postimg.cc/DyyZgdsj/meta-icon.png" alt="">
+                        <p>Meta Business Suite</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="card-menu-items">
+                        <img src="https://i.postimg.cc/Tw7SX67W/settings.png" alt="">
+                        <p>Setting & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="card-menu-items">
+                        <img src="https://i.postimg.cc/NjFKg7j9/help.jpg" alt="">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="card-menu-items">
+                        <img src="https://i.postimg.cc/cJ5MxLWZ/display.png" alt="">
+                        <p>Display and Accessibility</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="card-menu-items">
+                        <img src="https://i.postimg.cc/J7Xc882V/feedback.jpg" alt="">
+                        <p>Give Feedback</p>
+                    </a>
+                    <a href="#" class="card-menu-items">
+                        <img src="https://i.postimg.cc/d3J0gGf0/logout.png" alt="">
+                        <p>Logout</p>
+                    </a>
                 </div>
             </div>
-            <div class="create-post">
-                <div class="ptop">
-                    <img src="images/profile.jpg" alt="" srcset="">
-                    <input type="text" placeholder="What's in your mind?">
-                </div>
-                <hr>
-                <div class="pbottom">
-                    <div class="post-icon">
-                        <i class="fa-solid fa-video red"></i>
-                        <p>Live Video</p>
-                    </div>
-                    <div class="post-icon">
-                        <i class="fa-solid fa-images green"></i>
-                        <p>Photo/Vidéo</p>
-                    </div>
-                    <div class="post-icon">
-                        <i class="fa-solid fa-face-grin yellow"></i>
-                        <p>Feelings/Activity</p>
-                    </div>
-                </div>
-            </div>
-            <div class="friends-post">
-                <div class="friends-ptop">
-                    <div class="img-name">
-                        <img src="images/friend6.jpg" alt="" srcset="">
-                        <div class="friends">
-                            <p class="friends-name">Bader Din Away</p>
-                            <p class="time">2h.<i class="fa-solid fa-users"></i></p>
-                        </div>
-                    </div>
-                    <div class="menu">
-                        <i class="fa-solid fa-ellipsis"></i>
-                    </div>
-                </div>
-                <img src="images/post-5.jpg" alt="" srcset="">
-                <div class="info">
-                    <div class="post-icons">
-                        <img src="images/like.png" alt="" srcset="">
-                        <img src="images/hhhh.png" alt="" srcset="">
-                        <img src="images/heart.png" alt="" srcset="">
-                        <p>You, Fatima and 1.6k others</p>
-                    </div>
-                    <div class="comment">
-                        <p>300 comments</p>
-                        <p>90 shares</p>
-                    </div>
-                </div>
-                <hr>
 
-                <div class="like">
-                    <div class="like-icon">
-                        <i class="fa-solid fa-thumbs-up active"></i>
-                        <p>Like</p>
+            <!-- Main section -->
+            <div class="main">
+                <div class="main-left">
+                    <div class="img">
+                        <img src="https://i.postimg.cc/1RWP9xnB/profile.jpg" alt="">
+                        <p>DevArt</p>
                     </div>
-                    <div class="like-icon">
-                        <i class="fa-solid fa-message"></i>
-                        <p>Comments</p>
+                    <div class="img">
+                        <img src="https://i.postimg.cc/gcyX427J/friends.png" alt="">
+                        <p>Friends</p>
                     </div>
-                    <div class="like-icon">
-                        <i class="fa-solid fa-share"></i>
-                        <p>Shares</p>
+                    <div class="img">
+                        <img src="https://i.postimg.cc/P5CqGXS1/news.png" alt="">
+                        <p>News</p>
                     </div>
-                </div>
-                
-                <hr>
+                    <div class="img">
+                        <img src="https://i.postimg.cc/Yqp4Pwcx/group.png" alt="">
+                        <p>Groups</p>
+                    </div>
+                    <div class="img">
+                        <img src="https://i.postimg.cc/66hqn174/marketplace.png" alt="">
+                        <p>Marketplace</p>
+                    </div>
+                    <div class="img">
+                        <img src="https://i.postimg.cc/85926GRg/watch.png" alt="">
+                        <p>Watch</p>
+                    </div>
+                    <div class="img">
+                        <img src="https://i.postimg.cc/431qBtpP/see-more.png" alt="">
+                        <p>See More</p>
+                    </div>
+                    <hr>
 
-                <div class="comment-wrapper">
-                    <img src="images/friend8.jpg" alt="" srcset="">
-                    <div class="circle"></div>
-                    <div class="comment-search">
-                        <input type="text" placeholder="Write a comment">
-                        <i class="fa-regular fa-face-smile"></i>
-                        <i class="fa-soli fa-camera"></i>
-                        <i class="fa-regular fa-note-sticky"></i>
+                    <div class="shortcuts">
+                        <p>Your Shortcuts</p>
+                        <a href="#">Edit</a>
+                    </div>
+
+                    <!-- Games section -->
+                    <div class="img">
+                        <img src="https://i.postimg.cc/gkPyk7Cw/candy-crush.png" alt="">
+                        <p>Candy Crush Saga</p>
+                    </div>
+                    <div class="img">
+                        <img src="https://i.postimg.cc/6QQfxGDY/bubble-shooter.jpg" alt="">
+                        <p>Bubble Shooter</p>
+                    </div>
+                    <div class="img">
+                        <img src="https://i.postimg.cc/FRdb7XFS/Car-Town-Game.jpg" alt="">
+                        <p>Car Town Game</p>
+                    </div>
+                    <div class="img">
+                        <img src="https://i.postimg.cc/c4QmRWRM/art.jpg" alt="">
+                        <p>Design Art</p>
+                    </div>
+                    <div class="img">
+                        <img src="https://i.postimg.cc/cL0cTzTq/art2.jpg" alt="">
+                        <p>Design</p>
+                    </div>
+                    <div class="img">
+                        <img src="https://i.postimg.cc/0yn04CHz/art3.jpg" alt="">
+                        <p>Art</p>
                     </div>
                 </div>
 
-            </div>
+                <div class="main-center">
+                 <div class="top-box">
+  <div class="my-story">
+    <img src="https://i.postimg.cc/1RWP9xnB/profile.jpg" alt="Profile">
+    <div class="upload">
+      <img src="https://i.postimg.cc/k5137KD4/upload.png" alt="Upload">
+      <p>Post Your Story</p>
+    </div>
+  </div>
 
+  <div class="friends-story">
+    <img src="https://i.postimg.cc/pXDwpgy3/status-5.jpg" alt="Status 5">
+    <div class="friends-profile">
+      <img src="https://i.postimg.cc/pXDwpgy3/status-5.jpg" alt="Friend 1">
+      <div class="circle"></div>
+      <div class="friend-name">
+        <p>Fatima Manai</p>
+      </div>
+    </div>
+  </div>
 
-        
+  <div class="friends-story">
+    <img src="https://i.postimg.cc/59ZJHBgQ/status-2.jpg" alt="Status 2">
+    <div class="friends-profile">
+      <img src="https://i.postimg.cc/cC7nnspv/friend2.jpg" alt="Friend 2">
+      <div class="circle"></div>
+      <div class="friend-name">
+        <p>Bilel Away</p>
+      </div>
+    </div>
+  </div>
 
+  <div class="friends-story">
+    <img src="https://i.postimg.cc/CKKXr5JV/status-4.jpg" alt="Status 4">
+    <div class="friends-profile">
+      <img src="https://i.postimg.cc/768hMFM0/friend10.jpg" alt="Friend 10">
+      <div class="circle"></div>
+      <div class="friend-name">
+        <p>Nabila Manai</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-         </div>
-    
-
-
-
-            <!-- .......................right section from here starts ..........----------->
-
-            <div class="main-right">
-                <div class="sponsored-section">
-                    <h4>Sponsored</h4>
-                    <div class="sponsored-link">
-                        <img src="images/advertisement.jpg" alt="Advertisement">
-                        <p>Online Advertisement Services <br><a href="#">onlineservices.com</a></p>
+                    <div class="create-post">
+                        <div class="ptop">
+                            <img src="https://i.postimg.cc/1RWP9xnB/profile.jpg" alt="">
+                            <input type="text" placeholder="What's in your mind?">
+                        </div>
+                        <hr>
+                        <div class="pbottom">
+                            <div class="post-icon">
+                                <i class="fa-solid fa-video red"></i>
+                                <p>Live Video</p>
+                            </div>
+                            <div class="post-icon">
+                                <i class="fa-solid fa-images green"></i>
+                                <p>Photo/Video</p>
+                            </div>
+                            <div class="post-icon">
+                                <i class="fa-solid fa-face-grin yellow"></i>
+                                <p>Feelings/Activity</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="sponsored-link">
-                        <img src="images/advertisement.jpg" alt="Advertisement">
-                        <p>Online Advertisement Services <br><a href="#">onlineservices.com</a></p>
+                    <div class="friends-post">
+                        <div class="friends-ptop">
+                            <div class="img-name">
+                                <img src="https://i.postimg.cc/7hN5LKz7/friend7.jpg" alt="">
+                                <div class="friends">
+                                    <p class="friends-name">Bader Din Away</p>
+                                    <p class="time">2h.<i class="fa-solid fa-users"></i></p>
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <img src="https://i.postimg.cc/JzZ9HSn9/post-5.jpg" alt="">
+                        <div class="info">
+                            <div class="post-icons">
+                                <img src="https://i.postimg.cc/N0rLXsTQ/like.png" alt="">
+                                <img src="https://i.postimg.cc/jS1LCwD8/hhhh.png" alt="">
+                                <img src="https://i.postimg.cc/65Y7J1tx/heart.png" alt="">
+                                <p>You, Fatima and 1.6k others</p>
+                            </div>
+                            <div class="comment">
+                                <p>300 comments</p>
+                                <p>90 shares</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="like">
+                            <div class="like-icon">
+                                <i class="fa-solid fa-thumbs-up active"></i>
+                                <p>Like</p>
+                            </div>
+                            <div class="like-icon">
+                                <i class="fa-solid fa-message"></i>
+                                <p>Comments</p>
+                            </div>
+                            <div class="like-icon">
+                                <i class="fa-solid fa-share"></i>
+                                <p>Shares</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="comment-wrapper">
+                            <img src="https://i.postimg.cc/SsCXBSNg/friend8.jpg" alt="">
+                            <div class="circle"></div>
+                            <div class="comment-search">
+                                <input type="text" placeholder="Write a comment">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <i class="fa-solid fa-camera"></i>
+                                <i class="fa-regular fa-note-sticky"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            
-                <hr>
-            
-                <div class="page-section">
-                    <h4>Your Pages and Profile</h4>
-                    <div class="page-links">
-                        <img src="images/profile0.jpg" alt="Profile">
-                        <p>Web Code</p>
-                    </div>
-                    <div class="page-links-item">
-                        <img src="images/sw.png" alt="Switch to page">
-                        <p>Switch to Page</p>
-                    </div>
-                    <div class="page-links-item">
-                        <img src="images/promotion.png" alt="Create promotion">
-                        <p>Create Promotion</p>
-                    </div>
-                </div>
-            
-                <hr>
-            
-                <div class="friend-section">
-                    <h4>Friend Request</h4>
-                    <div class="page-links">
-                        <img src="images/photo1.jpg" alt="Friend request">
-                        <p>Alaa Ben Hamouda</p>
-                    </div>
-                    <div class="buttons">
-                        <button type="submit" class="confirm">Confirm</button>
-                        <button type="submit" class="delete">Delete</button>
-                    </div>
-                </div>
-            
-                <hr>
-            
-                <div class="contact-section">
-                    <div class="contact-search">
-                        <h4>Contacts</h4>
-                        <img src="images/search.png" alt="Search">
-                        <img src="images/more.png" alt="More options">
-                    </div>
-                    <div class="page-links">
-                        <div class="online">
-                            <img src="images/friend1.jpg" alt="Friend">
+
+                <div class="main-right">
+                    <!-- Sponsored Section -->
+                    <div class="sponsored-section">
+                        <h4>Sponsored</h4>
+                        <div class="sponsored-link">
+                            <img src="https://i.postimg.cc/TY8051D3/advertisement.jpg" alt="Advertisement">
+                            <p>Online Advertisement Services <br><a href="#">onlineservices.com</a></p>
                         </div>
-                        <p>Ataa Ben Hamouda</p>
-                    </div>
-                    <div class="page-links">
-                        <div class="online">
-                            <img src="images/friend2.jpg" alt="Friend">
+                        <div class="sponsored-link">
+                            <img src="https://i.postimg.cc/TY8051D3/advertisement.jpg" alt="Advertisement">
+                            <p>Online Advertisement Services <br><a href="#">onlineservices.com</a></p>
                         </div>
-                        <p>Nabila Manai</p>
                     </div>
-                    <div class="page-links">
-                        <div class="online">
-                            <img src="images/friend3.jpg" alt="Friend">
+                    <hr>
+                    <!-- Page Section -->
+                    <div class="page-section">
+                        <h4>Your Pages and Profile</h4>
+                        <div class="page-links">
+                            <img src="https://i.postimg.cc/hPHkjKSL/profile0.jpg" alt="Profile">
+                            <p>Web Code</p>
                         </div>
-                        <p>Abd Aziz away</p>
+                        <div class="page-links-item">
+                            <img src="https://i.postimg.cc/7LYrvmHd/sw.png" alt="Switch to page">
+                            <p>Switch to Page</p>
+                        </div>
+                        <div class="page-links-item">
+                            <img src="https://i.postimg.cc/MT62Stzg/promotion.png" alt="Create promotion">
+                            <p>Create Promotion</p>
+                        </div>
                     </div>
-                    <div class="page-links">
-                        <div class="online">
-                            <img src="images/friend4.jpg" alt="Friend">
+                    <hr>
+                    <!-- Friend Request Section -->
+                    <div class="friend-section">
+                        <h4>Friend Request</h4>
+                        <div class="page-links">
+                            <img src="https://i.postimg.cc/prV2sR9h/photo1.jpg" alt="Friend request">
+                            <p>Alaa Ben Hamouda</p>
                         </div>
-                        <p>Bilel away</p>
+                        <div class="buttons">
+                            <button type="submit" class="confirm">Confirm</button>
+                            <button type="submit" class="delete">Delete</button>
+                        </div>
                     </div>
-                    <div class="page-links">
-                        <div class="online">
-                            <img src="images/friend5.jpg" alt="Friend">
+                    <hr>
+                    <!-- Contacts Section -->
+                    <div class="contact-section">
+                        <div class="contact-search">
+                            <h4>Contacts</h4>
+                            <img src="https://i.postimg.cc/43Gj6wHn/search.png" alt="Search">
+                            <img src="images/more.png" alt="More options">
                         </div>
-                        <p>Bader Din away</p>
-                    </div>
-                    <div class="page-links">
-                        <div class="online">
-                            <img src="images/friend6.jpg" alt="Friend">
+                        <div class="page-links">
+                            <div class="online">
+                                <img src="https://i.postimg.cc/cC7nnspv/friend2.jpg" alt="Friend">
+                            </div>
+                            <p>Ataa Ben Hamouda</p>
                         </div>
-                        <p>Imen away</p>
-                    </div>
-                    <div class="page-links">
-                        <div class="online">
-                            <img src="images/friend7.jpg" alt="Friend">
-                        </div>
-                        <p>Karima Manai</p>
-                    </div>
-                    <div class="page-links">
-                        <div class="online">
-                            <img src="images/friend8.jpg" alt="Friend">
-                        </div>
-                        <p>Fatima Manai</p>
-                    </div>
-                    <div class="page-links">
-                        <div class="online">
-                            <img src="images/friend9.jpg" alt="Friend">
-                        </div>
-                        <p>Najiya away</p>
-                    </div>
-                    <div class="page-links">
-                        <div class="online">
-                            <img src="images/friend10.jpg" alt="Friend">
-                        </div>
-                        <p>Ali Manai</p>
+                        <!-- Repeat the above structure for other contacts -->
                     </div>
                 </div>
             </div>
-            
-
-         </div>
-
-
         </div>
-    
-        <script src="script.js"></script>
+
+        <script>
+            function toggleCardMenu() {
+                var cardMenu = document.getElementById("cardWrap");
+                // Toggle the class 'open-menu' to control visibility
+                cardMenu.classList.toggle("open-menu");
+            }
+            
+        </script>
     </body>
 </html>
